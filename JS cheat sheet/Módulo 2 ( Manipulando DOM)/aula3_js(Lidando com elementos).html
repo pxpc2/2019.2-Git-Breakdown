@@ -1,0 +1,38 @@
+<html>
+    <body>
+
+        <div id="main">
+            <input type="text" name="#01"/>
+            <button name="sendName">Send</button>
+        </div>
+
+        <div class="app">
+
+        </div>
+
+        <script>
+        
+            var linkElement = document.createElement('input');
+
+            linkElement.setAttribute('href' , 'http://github.com');
+
+            var text = document.createTextNode('Acessar'); 
+            linkElement.appendChild(text);
+
+            var container = document.querySelector('#main');
+            container.appendChild(linkElement);
+
+            //linkElement.onclick( container.removeAttributeNode(linkElement))
+
+            //you cant also manipulate CSS code in javasScript
+
+            var div = document.querySelector('.app');
+            div.style.width = 100;
+            div.style.height = 100;
+            div.style.backgroundColor = '#f00'; //in js, we dont have -, we concatenete the strings
+            // with the second in upper case
+
+
+        </script>
+    </body>
+</html>

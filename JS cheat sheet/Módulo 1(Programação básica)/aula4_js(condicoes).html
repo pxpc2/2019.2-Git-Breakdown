@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>
+        </title>
+        <body>
+            <script>
+
+            function returnSex(sexo)
+            {
+                //m , f
+                //Masculino, feminino
+                // if( 1 == "1"){} return true because the content of the variables are the same
+                // if(1 === "1"){} return false bacause the variable type are not the same
+                // (==) verify if the content of the variable are the same
+                //(===) verify if the content of the variable are the same, and verify if the datatype are the same too
+
+                //using if condition
+                
+                if( sexo === 'M')
+                {
+                  return 'Masculino';  
+                }
+                else if (sexo === 'F')
+                {
+                    return 'Feminino';
+                }
+                else
+                {
+                    return 'Not a Sex';
+                }
+                var result = returnSex('M') // Masculino
+                // using switch condition
+                switch(sexo)
+                {
+                    case 'M':
+                        return 'Masculino';
+                    case 'F':
+                        return 'Feminino';
+                    default:
+                        return 'Outro';                   
+                }
+            }
+
+            // AND, OR, NOT
+
+            //AND
+            if(sexo === 'M' && idade >= 18)
+            {
+                console.log('ok');
+            }
+
+            //OR
+            if(sexo === 'M' || idade >= 18)
+            {
+                console.log('ok');
+            }
+
+            //NOT
+            if(sexo !== 'M')
+            {
+                console.log('ok');
+            }
+
+
+            var Masculino = sexo === 'M'; //return true or false and store into the masculino var
+
+
+            //condição single line (condição ternaria)
+
+            return (sexo === 'M') ? 'Masculino' : 'Feminino' ;
+
+            var retorno = (sexo === 'M') ? 'Masculino' : 'Feminino' ;
+
+            //or
+
+
+
+
+            </script>
+        </body>
+    </head>
+</html>

@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <div id= "app">
+            <button id="#01", name="button" , class = 'btn'>Click</button>
+        </div>
+
+
+        <script>
+            var inputElement = document.getElementById('#01');
+
+            var inputElement2 = document.getElementsByTagName('button'); //return a vector of html colection
+            var x = inputElement2[0]; 
+
+            var inputElement3 = document.getElementsByClassName('nome'); //return a vector 
+            
+            var getelement = document.querySelector('body div#app button');
+            // or
+            var getelement = document.querySelector('button[name=button]');
+
+            //In html # refers to id's
+                // and . referts o classe's
+            //Button on click js
+
+            var btn = document.querySelector("button.btn");
+            
+            btn.onclick = function(){
+                console.log("Eae");
+            }
+
+            //or
+
+            var btn = document.querySelector('button[name=button]');
+        
+        </script>
+
+    </body>
+</html>
+
