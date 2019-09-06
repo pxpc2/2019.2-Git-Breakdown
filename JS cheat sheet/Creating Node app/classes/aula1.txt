@@ -1,0 +1,13 @@
+1. $npm init -y
+		|-> Create packager.json. It's a file with instructions to tell
+		how the application should behave and keeps the dependencies of the application such modules and projects
+
+2 . $nmp install express
+		|-> Install the express module. Note the express in packager.jsos
+		file
+
+
+	Note(1): node_modules directory: Keeps all dependencies of the projects.
+
+3. Create server.js file
+	Note(2): read server.js file to understand the code
